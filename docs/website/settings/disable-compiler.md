@@ -3,12 +3,12 @@ slug: /disable-compiler
 hide_table_of_contents: true
 ---
 
-# Disable Compiler
+# コンパイラの無効化
 
-This option turns off the TurboWarp compiler. This is only useful when debugging bugs in the compiler or when using the editor to create a project.
+このオプションは、TurboWarpコンパイラをオフにします。これは、コンパイラのバグをデバッグするときや、エディタを使用してプロジェクトを作成するときにのみ有効です。
 
 :::warning
-Never change this unless you really know what you're doing.
+本当に何をやっているのかわからない限り、これを変更しないでください。
 :::
 
-You can enable the "Disable compiler in editor" addon to turn the compiler off by default in the editor.
+Disable compiler in editor" アドオンを有効にすると、エディターでコンパイラーをデフォルトでオフにすることができます。
