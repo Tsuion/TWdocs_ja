@@ -1,9 +1,9 @@
 ---
 slug: /unshared-projects
-sidebar_label: Unshared Projects
+sidebar_label: 非共有プロジェクト
 ---
 
-# Unshared projects will be actually private eventually
+# 非共有プロジェクトは、いずれ実際に非公開になる
 
 <!-- 
   I won't link these in the public website because there will be way too much spam if we do that, but here are relevant links:
@@ -11,91 +11,91 @@ sidebar_label: Unshared Projects
   https://github.com/LLK/scratch-www/pull/6773
 -->
 
-**Updated June 1, 2022** - Loading unshared projects in TurboWarp, forkphorus, the packager, and other third-party site will no longer be possible **at some point in the future** due to upcoming changes to the Scratch API that will make unshared projects actually private.
+**2022年6月1日更新** - TurboWarp、forkphorus、パッケージャー、その他のサードパーティーサイトでの非共有プロジェクトの読み込みは、Scratch APIへの今後の変更により、非共有プロジェクトが実際に非公開になるため、**将来のある時点で**できなくなる予定です。
 
-We think this is a [good thing](#good-thing), but you may have to find [workarounds](#workarounds) depending on your workflow.
+私たちはこれを[良いこと](#good-thing)だと考えていますが、あなたのワークフローによっては[回避策](#workarounds)を見つけなければならないかもしれません。
 
-## June 1 Update {#june-1}
+##6月1日更新 {#june-1}
 
 <!-- https://scratch.mit.edu/discuss/topic/602417/?page=55#post-6356705 -->
-A Scratch Team forum post confirms what we've been speculating for a while: these changes will make unshared projects actually private as they should've been from the start. This rest of this page has been updated to reflect this.
+Scratch Teamのフォーラムへの投稿で、私たちが以前から推測していたことが確認されました：この変更により、非共有プロジェクトは最初からそうであったように、実際に非公開となります。このページの残りの部分は、これを反映するために更新されました。
 
-When the changes will happen remains unknown. We will not provide time estimates beyond "at some point in the future". Blind guesses won't help. Angrily venting about your disagreement on the forums also won't help.
+この変更がいつ行われるかは、まだ不明です。私たちは「将来のある時点で」以上の時間の予測を提供することはありません。盲目的な推測は役に立ちません。また、意見の相違をフォーラムで怒り狂って発散しても、何の解決にもなりません。
 
-There are [good reasons](#good-thing) for this change to be made.
+この変更がなされるには[正当な理由](#good-thing)があるのです。
 
-Consider directing people to this page instead of just paraphrasing to reduce confusion.
+混乱を減らすために、言い換えだけでなくこのページに誘導することを検討してください。
 
-## What's actually happening {#whats-happening}
+## 実際に起きていること {#whats-happening}
 
-Scratch is changing how project loading works to use a "project token". For unshared projects, this token can only be accessed by the owner of the project.
+Scratchでは、プロジェクトのロード方法を変更し、"プロジェクトトークン "を使用するようになりました。非共有プロジェクトの場合、このトークンはプロジェクトの所有者のみがアクセスすることができます。
 
-Access to this token will be required to download a project, which will make it will be impossible to load an unshared project in TurboWarp, forkphorus, scratch-gui, or any other third-party site by knowing just the project ID. These changes will affect your own unshared projects even if you are signed into Scratch in the same browser.
+このトークンへのアクセスはプロジェクトをダウンロードする際に必要となり、プロジェクトIDを知るだけではTurboWarp、forkphorus、scratch-gui、その他のサードパーティサイトで非共有プロジェクトをロードすることは不可能になります。この変更は、同じブラウザでScratchにサインインしている場合でも、自分の非共有プロジェクトに影響を及ぼします。
 
-## This is a good thing {#good-thing}
+## これは良いことです {#good-thing}
 
-Securing unshared projects is a decade overdue.
+非共有プロジェクトの保護は、10年遅れています。
 
-Don't pretend that no one has had their project stolen because they didn't know unshared projects aren't actually private even though the Scratch website says "only you can see it". Many unshared projects include pictures and videos of children, their friends, their family, and other personal information under the assumption that unshared projects are actually private.
+Scratchのウェブサイトには「自分だけが見ることができる」と書かれているのに、非共有プロジェクトが実は非公開であることを知らなかったために、誰も自分のプロジェクトを盗まれたことがない、というふりはしないでください。多くの非共有プロジェクトには、非共有プロジェクトが実際には非公開であるという前提で、子供やその友人、家族などの写真やビデオ、その他の個人情報が含まれています。
 
-In most other large websites, "unshared" or "private" things actually being effectively public would be considered a critical security bug and would usually be eligible for a very large bug bounty. ([example](https://bugs.xdavidhu.me/google/2021/01/11/stealing-your-private-videos-one-frame-at-a-time/))
+他のほとんどの大規模なウェブサイトでは、「非共有」または「非公開」のものが実際には事実上公開されていることは、重大なセキュリティバグとみなされ、通常は非常に大きなバグバウンティの対象となります。([例](https://bugs.xdavidhu.me/google/2021/01/11/stealing-your-private-videos-one-frame-at-a-time/))
 
-We've always had the stance that if people want unshared projects to actually be private, they should talk to the Scratch Team, and perhaps enough people did that for the Scratch Team to listen.
+私たちは、非共有プロジェクトを実際に非公開にしたいのであれば、Scratch Teamに相談すべきだというスタンスを常にとっており、おそらくScratch Teamが耳を傾けるほど多くの人がそうしてくれたのでしょう。
 
-## Workarounds {#workarounds}
+## 回避策 {#workarounds}
 
-Our first priority is making sure that shared projects continue to work with minimal interruption. Anything else related to unshared projects will happen later if at all.
+私たちの最優先事項は、共有プロジェクトが最小限の中断で作業を継続できるようにすることです。非共有プロジェクトに関連するその他のことは、起こるとすれば、後で起こることです。
 
-You should assume that existing links relying on viewing unshared projects, including embeds, will not work in the future without changes.
+非共有プロジェクトの閲覧に依存する既存のリンク（埋め込みを含む）は、今後、変更なしに機能しなくなると考えてください。
 
-Here's our current list of suggested workarounds:
+以下は、現在提案されている回避策のリストです。
 
-1. The best way to share a project with other people is to share it on the Scratch website. The Scratch community is really nice. This is what Scratch encourages you to do.
-1. If you just want to test your project in a third-party site without sharing it, you can download the project to your computer (File > Save to your computer) and load the downloaded file. Most tools support this.
-1. For embedding Scratch projects into other sites without sharing them on Scratch, use [TurboWarp Packager](https://packager.turbowarp.org/), [forkphorus packager](https://forkphorus.github.io/packager/), or [HTMLifier](https://sheeptester.github.io/htmlifier/) ([guide on embedding](/packager/embedding)). These could be an alternative to sharing your projects on Scratch if you find a place to upload the generated files.
+1. プロジェクトを他の人と共有する最良の方法は、Scratchのウェブサイトで共有することです。Scratchのコミュニティは本当に素敵です。これはScratchが推奨していることです。
+1. プロジェクトを共有せずにサードパーティのサイトでテストしたいだけなら、プロジェクトをコンピュータにダウンロードし(ファイル > コンピューターに保存)、ダウンロードしたファイルをロードすることができます。ほとんどのツールはこれをサポートしています。
+1. Scratch上でプロジェクトを共有せずに他のサイトに埋め込むには、 [TurboWarp Packager](https://packager.turbowarp.org/), [forkphorus packager](https://forkphorus.github.io/packager/), または [HTMLifier](https://sheeptester.github.io/htmlifier/) ([埋め込みの詳細](/packager/embedding)) を使ってください。これらは、生成されたファイルをアップロードする場所を見つければ、Scratchでプロジェクトを共有することの代替になるかもしれません。
 
-More workarounds for things like collaborations may or may not be being looked into, but no promises can be made. Assume that nothing will happen. Scratch is 15 years old while TurboWarp is two years old. Collaborations happened just fine during the 13 years without TurboWarp and will continue just fine.
+共同作業のようなものに対するより多くの回避策は、検討されているかもしれませんし、されていないかもしれませんが、約束はできません。何も起きないと思ってください。Scratchは15年前、TurboWarpは2年前です。TurboWarpのない13年間、コラボレーションはうまくいっていましたし、これからもうまくいくでしょう。
 
 :::caution
-We've seen a couple people suggesting this so we want to be clear: **ANY site other than scratch.mit.edu that asks you for your Scratch password is a SCAM. You WILL lose your entire account and all of your projects irrecoverably. Legitimate sites will NEVER ask you for your Scratch password. <span style={{textDecoration: 'underline'}}>No exceptions</span>.**
+このような提案をする人を何人か見かけましたので、はっきりさせておきたいと思います。**scratch.mit.edu 以外のサイトで、Scratchのパスワードを要求してくるものは詐欺です。Scratchのパスワードを尋ねるサイト（scratch.mit.edu以外）は詐欺です。正規のサイトが Scratchのパスワードを尋ねることは決してありません。<span style={{textDecoration: 'underline'}}>例外はありません。</span>.**
 :::
 
-## Original page {#original}
+## オリジナルページ {#original}
 
 :::info
-This section will remain accurate until the changes are implemented.
+このセクションは、変更が実施されるまでは正確なままです。
 :::
 
-You've probably noticed that TurboWarp, forkphorus, etc. can load unshared projects, and you may be concerned about that.
+TurboWarpやforkphorusなどは共有されていないプロジェクトを読み込むことができるので、その点を気にされている方も多いのではないでしょうか？
 
-<!-- Reference for "nine years" is https://github.com/scratchblocks/scratchblocks/issues/1 -->
-<h3>This is a problem with the Scratch API that's been around for nine years. It's not a TurboWarp bug.</h3>
+<!-- "9年 "のリファレンスは https://github.com/scratchblocks/scratchblocks/issues/1 -->。
+<h3>これは9年前から存在するScratch APIの問題です。TurboWarpのバグではありません。</h3>。
 
-Even the official Scratch development builds maintained by the Scratch Team can view unshared projects (example: https://llk.github.io/scratch-gui/develop/#1) which implies to us that the Scratch Team does not consider this a serious issue. As TurboWarp loads projects the same way as scratch-gui, it's also able to load unshared projects. This problem can only be properly solved by the Scratch Team.
+Scratch Teamによって管理されている公式のScratch開発ビルドでさえ、共有されていないプロジェクトを表示できます (例: https://llk.github.io/scratch-gui/develop/#1)。これは、Scratch Teamがこの問題を深刻なものとは考えていないことを示唆しています。TurboWarpはscratch-guiと同じ方法でプロジェクトを読み込むので、共有されていないプロジェクトも読み込むことができます。この問題は、Scratch Teamによってのみ適切に解決されます。
 
-### Why doesn't TurboWarp refuse to load unshared projects? {#why-not-fix}
+### TurboWarpが非共有プロジェクトの読み込みを拒否しないのはなぜですか？ {#why-not-fix}
 
-Even if TurboWarp refused to load unshared projects, the root cause is still the Scratch API. Unshared projects could still be easily viewed using the official Scratch development builds or many other tools. TurboWarp is fully open source, so someone could easily make their own version without the code to check if a project is unshared. Unshared projects would not be any safer.
+TurboWarpが非共有プロジェクトの読み込みを拒否したとしても、根本的な原因はScratchのAPIにあります。非共有プロジェクトは、Scratchの公式開発ビルドや他の多くのツールを使って簡単に見ることができます。TurboWarpは完全にオープンソースなので、プロジェクトが非共有であるかどうかをチェックするコードを持たない独自のバージョンを誰かが簡単に作ることができます。非共有プロジェクトは、何ら安全ではないでしょう。
 
-This is a problem that can only be fixed by the Scratch Team implementing access control for projects.scratch.mit.edu (where project data is downloaded from) as they've already done for api.scratch.mit.edu (where project titles and descriptions are loaded from). If you think this is important, let the Scratch Team know.
+これは、Scratch Teamが、api.scratch.mit.edu（プロジェクトのタイトルと説明を読み込む場所）に対してすでに行ったように、projects.scratch.mit.edu（プロジェクトのデータをダウンロードする場所）に対してもアクセスコントロールを行うことでのみ解決できる問題です。もしこれが重要だと思うのであれば、Scratch Team に知らせてください。
 
-### How to protect your unshared projects {#prevention}
+### 非共有プロジェクトを保護する方法 {#prevention}
 
-Don't share the project ID (the numbers in the URL to your project) with others. That includes links to your project and screenshots/videos that include your browser's URL bar.
+プロジェクトID（あなたのプロジェクトのURLに含まれる数字）を他人と共有しないでください。これには、あなたのプロジェクトへのリンクや、ブラウザのURLバーを含むスクリーンショット・動画も含まれます。
 
-If the project ID has already been leaked, and you don't want people to see the project, DO NOT delete it through the My Stuff page as that won't actually delete the project data. Instead, you should:
+プロジェクトIDがすでに流出していて、そのプロジェクトを他の人に見られたくない場合、マイスタッフからプロジェクトを削除しないでください。その代わり、次のことを行ってください。
 
-1. Save a copy of the project through the File > Save as a copy menu.
-2. Wait for the copy to finish saving. Refresh the copied project to make sure that it saved correctly.
-3. Go back to the original project and manually delete everything from the original project. Manually remove all sprites, sounds, costumes, and scripts that you don't want other people to find, then save the project again to overwrite the project. Deleting a project through the My Stuff page, even emptying the trash, is not enough because Scratch won't actually delete the project data.
-4. Do all future work on the copy you created in step 1.
+1. ファイル > コピーとして保存]メニューからプロジェクトのコピーを保存する。
+2. コピーの保存が完了するのを待ちます。コピーしたプロジェクトを更新して、正しく保存されたことを確認する。
+3. 元のプロジェクトに戻り、元のプロジェクトからすべてを手動で削除します。スプライト、サウンド、コスチューム、スクリプトなど、他の人に見られたくないものをすべて手動で削除してから、再度プロジェクトを保存して上書きしてください。マイスタッフページからプロジェクトを削除しても、ゴミ箱を空にしても、Scratchは実際にはプロジェクトデータを削除しないので、十分ではありません。
+4. 今後の作業はすべて、手順1で作成したコピーで行ってください。
 
-If someone already downloaded the project to their computer before you did this, there's not much you can directly do about that. If someone has stolen one of your unshared projects and released it as-if they made it, contact the Scratch Team.
+もし、この作業をする前に誰かがすでに自分のコンピュータにプロジェクトをダウンロードしていた場合、あなたが直接できることはあまりありません。もし誰かがあなたの非共有プロジェクトを盗み、あたかも自分が作ったかのように公開した場合は、Scratch Teamに連絡してください。
 
-Another way to keep your project safe would be to use an offline editor such as [Scratch Desktop](https://scratch.mit.edu/download) or [TurboWarp Desktop](https://desktop.turbowarp.org/).
+プロジェクトを安全に保つもう一つの方法は、[Scratch Desktop](https://scratch.mit.edu/download)や[TurboWarp Desktop](https://desktop.turbowarp.org/)などのオフラインエディタを使用することでしょう。
 
-This is also a good opportunity to save a backup of your project to somewhere safe on your computer so that you don't have to learn the importance of backups the [hard way](https://ocular.jeffalo.net/search?q=project%20disappeared&sort=relevance).
+また、この機会にプロジェクトのバックアップをコンピュータの安全な場所に保存しておくと、バックアップの重要性を[苦労して](https://ocular.jeffalo.net/search?q=project%20disappeared&sort=relevance)学ぶ必要がありません。
 
-### What is project ID 1? {#what-is-1}
+### プロジェクトID1とは何ですか？{#what-is-1}
 
-Curious people have visited https://turbowarp.org/1 or https://llk.github.io/scratch-gui/develop/#1 and found a strange project. That's just what the Scratch API returns when you ask for the project with ID 1.
+好奇心旺盛な人は、https://turbowarp.org/1 や https://llk.github.io/scratch-gui/develop/#1 を訪れて、奇妙なプロジェクトを発見したことがあるでしょう。これはまさに、Scratch APIがID 1のプロジェクトを問い合わせたときに返すものです。
