@@ -3,26 +3,26 @@ slug: /development/globals
 hide_table_of_contents: true
 ---
 
-# Globals
+# グローバル
 
-Global variables that can be accessed using the developer console, for convenience.
+開発者コンソールを使ってアクセスできる、便利なグローバル変数です。
 
-These cannot be used from custom extensions.
+これらはカスタム拡張機能からは使用できません。
 
 ## `vm`
 
-Refers to the [scratch-vm](https://github.com/TurboWarp/scratch-vm) instance.
+[scratch-vm](https://github.com/TurboWarp/scratch-vm)のインスタンスを指します。
 
 ## `ScratchBlocks`
 
-Refers to the *real* [scratch-blocks](https://github.com/TurboWarp/scratch-blocks) (`Blockly` has very little stuff on it). Only available after opening the editor.
+*実物の*[scratch-blocks](https://github.com/TurboWarp/scratch-blocks) を参照します (`Blockly` にはほとんど何も載っていません)。エディタを開いた後でのみ利用可能です。
 
 ## `paper`
 
-Refers to the [paper.js](https://github.com/LLK/paper.js) instance. Only available after opening the costume editor.
+[paper.js](https://github.com/LLK/paper.js)のインスタンスを参照しています。コスチュームエディタを開いた後でのみ利用可能です。
 
 ## `ReduxStore`
 
-Refers to the internal redux store used by scratch-gui.
+scratch-gui が使用する内部 redux ストアを指します。
 
-Get state with `ReduxStore.getState()` and dispatch events with `ReduxStore.dispatch({ type: "..." })`
+`ReduxStore.getState()` で状態を取得し、 `ReduxStore.dispatch({ type: "..." })` でイベントをディスパッチします。
