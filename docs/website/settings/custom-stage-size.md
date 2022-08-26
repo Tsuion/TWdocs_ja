@@ -3,14 +3,14 @@ slug: /custom-stage-size
 hide_table_of_contents: true
 ---
 
-# Custom Stage Size
+# カスタムステージサイズ
 
-Changes the size of the Scratch stage from 480x360 (4:3) to something else.
+Scratchステージのサイズを480x360（4:3）から他のサイズに変更します。
 
 :::caution
-Most projects will not work properly with custom stage size.
+ほとんどのプロジェクトは、カスタムステージサイズでは正常に動作しません。
 :::
 
-640x360 will make a widescreen 16:9 stage. Using higher resolutions such as 1280x720, 1920x1080, or larger is technically possible, but we recommend using a lower resolution with the same aspect ratio and allowing fullscreen mode to upscale it to the user's display (remember that some displays might not even fit such large stages!).
+640x360はワイドスクリーンの16:9のステージになります。1280x720、1920x1080、またはそれ以上の解像度を使用することは技術的には可能ですが、同じアスペクト比で低い解像度を使用し、フルスクリーンモードでユーザーのディスプレイに合わせてアップスケールすることをお勧めします（ディスプレイによっては、このように大きなステージに合わない場合もあることを覚えておいてください！）。
 
-Projects can detect the stage size using methods such as https://scratch.mit.edu/projects/588493413/
+プロジェクトでは、https://scratch.mit.edu/projects/588493413/ のような方法を用いてステージサイズを検出することができます。
