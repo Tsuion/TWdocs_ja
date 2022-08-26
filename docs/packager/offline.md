@@ -6,7 +6,7 @@ sidebar_label: オフラインパッケージャー
 
 # オフラインパッケージャー
 
-TurboWarp Packager](https://packager.turbowarp.org/)をオフラインで使用する方法があり、様々な状況（例えば、おそらくあなたの学校はturbowarp.orgをブロックしています）で役に立つことがあります。
+[TurboWarp Packager](https://packager.turbowarp.org/)をオフラインで使用する方法があり、様々な状況（例えば、おそらくあなたの学校はturbowarp.orgをブロックしています）で役に立つことがあります。
 
 オフラインパッケージャーは1ヶ月に1回程度更新する予定です。
 
@@ -14,7 +14,7 @@ Electron、NW.js、WKWebViewの実行ファイルのような大きな資産は�
 
 ## Desktop App {#desktop}
 
-TurboWarp Desktop](https://desktop.turbowarp.org/)をダウンロードすると、オフライン版のパッケージャーを含むことができます。右上の「(?)」ボタンを押し、パッケージャーを選択することでアクセスできます。
+[TurboWarp Desktop](https://desktop.turbowarp.org/)をダウンロードすると、オフライン版のパッケージャーを含むことができます。右上の「(?)」ボタンを押し、パッケージャーを選択することでアクセスできます。
 
 内蔵のパッケージャーは、エディターで開いているプロジェクトを自動的に読み込みます。
 
