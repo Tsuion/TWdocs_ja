@@ -3,12 +3,12 @@ slug: /remove-fencing
 hide_table_of_contents: true
 ---
 
-# Remove Fencing
+# フェンスの撤去
 
-Allows sprites to move offscreen, become as large or as small as they want, and allows touching blocks to work offscreen.
+スプライトを画面外に移動させ、好きなだけ大きくしたり小さくしたり、タッチしたブロックを画面外で動作させることができるようになります。
 
-This may slightly improve performance in some projects.
+これにより、プロジェクトによってはパフォーマンスが若干向上する場合があります。
 
 :::caution
-This may break some projects.
+一部のプロジェクトが壊れる可能性があります。
 :::
