@@ -3,21 +3,21 @@ slug: /custom-fps
 hide_table_of_contents: true
 ---
 
-# 60 FPS (Custom FPS)
+# 60 FPS (カスタムFPS)
 
-Custom FPS (frames per second) changes how often scripts are run every second. Most often this is changed to 60 FPS, but any value between 1 and 250 is possible.
+カスタムFPS（frames per second）は、1秒間に実行されるスクリプトの頻度を変更します。多くの場合、60FPSに変更されますが、1〜250の間で任意の値を設定することが可能です。
 
-A value of 0 is special: It will make the project run at the same framerate as the screen instead of a set interval. This also means that the project's scripts may stop running when the project's tab is hidden.
+0の値は特殊で、設定した間隔ではなく、画面と同じフレームレートでプロジェクトを実行させることになります。これは、プロジェクトのタブが隠されたときに、プロジェクトのスクリプトの実行が停止する可能性があることも意味します。
 
-A vast majority of projects will not work properly with custom framerates. For these projects, [interpolation](interpolation) should be used instead. For example, consider the following simple script:
+大半のプロジェクトは、カスタムフレームレートでは正しく動作しないでしょう。このようなプロジェクトでは、代わりに [interpolation](interpolation) を使用する必要があります。例えば、次のような簡単なスクリプトを考えてみましょう。
 
-![When flag clicked, forever move 1 step](./forever-move-1-step.svg)
+![旗をクリックしたとき、ずっと1歩動かす](./forever-move-1-step.svg)
 
-When running at 30 FPS (as Scratch typically does), this script will run 30 times per second so the sprite will move 30 steps per second. However, if the framerate is changed to 60, the script will run 60 times per second so the sprite will move twice as many steps in a second.
+Scratchが30FPSで動作している場合、このスクリプトは1秒間に30回実行され、スプライトは1秒間に30歩移動します。しかし、フレームレートを60に変更すると、このスクリプトは1秒間に60回実行され、スプライトは1秒間に2倍のステップ数を移動するようになります。
 
-To make projects that are compatible with custom framerates, you should use techniques such as delta time:
+カスタムフレームレートに対応したプロジェクトを作るには、デルタタイムなどのテクニックを使う必要があります。
 
- - https://en.wikipedia.org/wiki/Delta_timing
- - https://scratch.mit.edu/projects/487694716/ (Scratch example)
+ - https://en.wikipedia.org/wiki/Delta_timing (英語版)
+ - https://scratch.mit.edu/projects/487694716/ (Scratchでの例)
 
-These techniques may require significant changes to your project.
+これらのテクニックは、プロジェクトに大きな変更を加える必要があるかもしれません。
