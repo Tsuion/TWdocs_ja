@@ -1,29 +1,29 @@
 ---
 slug: /packager/offline
 hide_table_of_contents: true
-sidebar_label: Offline Packager
+sidebar_label: オフラインパッケージャー
 ---
 
-# Offline Packager
+# オフラインパッケージャー
 
-There are ways to use the [TurboWarp Packager](https://packager.turbowarp.org/) offline which can be useful in various circumstances (for example, perhaps your school blocks turbowarp.org).
+TurboWarp Packager](https://packager.turbowarp.org/)をオフラインで使用する方法があり、様々な状況（例えば、おそらくあなたの学校はturbowarp.orgをブロックしています）で役に立つことがあります。
 
-We aim to update the offline packager about once a month.
+オフラインパッケージャーは1ヶ月に1回程度更新する予定です。
 
-Large assets such as Electron, NW.js, or WKWebView executables are *not* included in the offline packager and will be downloaded separately as needed. The packager will try to cache these files offline after you download them the first time, so they should only have to be downloaded once. Usually these downloads will still work even if your school blocks turbowarp.org.
+Electron、NW.js、WKWebViewの実行ファイルのような大きな資産はオフラインパッケージャーに含まれませんので、必要に応じて別途ダウンロードする必要があります。オフラインパッケージャーはこれらのファイルを最初にダウンロードした後、オフラインでキャッシュしようとするので、ダウンロードは一度だけでよいはずです。通常、これらのダウンロードは、あなたの学校がturbowarp.orgをブロックしている場合でも、まだ動作します。
 
 ## Desktop App {#desktop}
 
-You can download [TurboWarp Desktop](https://desktop.turbowarp.org/), which includes an offline version of the packager. You can access it by pressing the "(?)" button in the top right corner then select the packager.
+TurboWarp Desktop](https://desktop.turbowarp.org/)をダウンロードすると、オフライン版のパッケージャーを含むことができます。右上の「(?)」ボタンを押し、パッケージャーを選択することでアクセスできます。
 
-The builtin packager will automatically load the project you have open in the editor.
+内蔵のパッケージャーは、エディターで開いているプロジェクトを自動的に読み込みます。
 
-## Standalone HTML {#html}
+## スタンドアロンHTML {#html}
 
-If you can't or don't want to download the desktop app, you can download the standalone HTML versions from GitHub instead. Visit https://github.com/TurboWarp/packager/releases and download "turbowarp-packager-standalone-x.x.x.html" under "Assets" from the top release. You can simply open the HTML file in your browser.
+デスクトップアプリをダウンロードできない、またはしたくない場合は、代わりにGitHubからスタンドアロンHTML版をダウンロードすることができます。https://github.com/TurboWarp/packager/releases にアクセスし、トップリリースの「Assets」の下にある「turbowarp-packager-standalone-x.x.html」をダウンロードします。HTMLファイルはブラウザで開くだけでOKです。
 
-The HTML file does not include any update checker. You will have to handle check for and handle updates on your own.
+このHTMLファイルにはアップデートチェッカーは含まれていません。自分でアップデートのチェックと処理をする必要があります。
 
-## Web App {#pwa}
+## Webアプリケーション {#pwa}
 
-The https://packager.turbowarp.org/ is a web app that tries to function offline after loading it once. This is still experimental and we do not recommend relying on this.
+https://packager.turbowarp.org/ は、一度読み込むとオフラインで機能しようとするウェブアプリです。これはまだ実験的なものであり、これに頼ることはお勧めしません。
