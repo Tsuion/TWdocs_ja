@@ -3,18 +3,18 @@ slug: /cloud-variables
 hide_table_of_contents: true
 ---
 
-# Cloud Variables
+# クラウド変数
 
-TurboWarp has its own cloud variable server independent of Scratch.
+TurboWarpはScratchとは独立した独自のクラウド変数サーバーを持っています。
 
-Some things to keep in mind:
+いくつか注意点があります。
 
- - Anyone can change their username using the "Edit > Change Username" menu. A user who appears to be named "griffpatch" is most likely not the real griffpatch.
- - To reduce abuse, the cloud variable server rejects any username that doesn't belong to an existing Scratch account.
- - Names of Scratch Team members cannot be used due to potential abuse. That includes ScratchCat.
- - The variable length limit has been significantly increased to allows tens of thousands of characters.
- - Cloud variables can still only hold numbers.
- - Cloud variables are reset whenever the server restarts or when no one is in the project for a short period of time, so things like leaderboards won't be saved very long.
- - Cloud variables are disabled when the editor is opened.
- - Do not abuse cloud variables to make unmoderated chat rooms.
- - There are no public cloud variable history logs.
+ - ユーザーネームは"編集"→"ユーザーネームの変更"で誰でも変更することができます。"griffpatch"と表示されているユーザーは、本物のgriffpatchではない可能性が高いです。
+ - 不正使用を減らすために、クラウド変数サーバーは既存のScratchアカウントに属さないユーザー名を拒否しています。
+ - Scratchチームのメンバーの名前は、悪用される可能性があるため使用できません。これにはScratchCatも含まれます。
+ - 変数の長さの制限が大幅に増え、数万文字まで使用できるようになりました。
+ - クラウド変数には、これまで通り数字のみを格納することができます。
+ - クラウド変数は、サーバーが再起動したときや、プロジェクトに誰もいない状態がしばらく続くとリセットされるので、リーダーボードのようなものはあまり長く保存されないでしょう。
+ - クラウド変数はエディターが開かれたときに無効になります。
+ - クラウド変数を悪用して、管理されていないチャットルームを作らないようにしてください。
+ - クラウド変数の履歴ログは公開されません。
