@@ -3,13 +3,13 @@ slug: /remove-misc-limits
 hide_table_of_contents: true
 ---
 
-# Remove Miscellaneous Limits
+# 雑多な制限を取り除く
 
-Disables various limits that aren't significant enough to get a dedicated toggle.
+専用のトグルを取得するほど重要でない様々な制限を無効にします。
 
- - Pitch sound effect range is increased from 360 to 1000
- - Blocks that set or change sound effects or volume run instantly instead of stopping the script for a full frame
- - Minimum pen size is reduced from 1 to 0 and maximum pen is increased from 1200 to infinite
- - Mouse X and Y coordinates will not be rounded, which can useful in fullscreen
+ - ピッチのサウンドエフェクトの範囲を360から1000に拡大
+ - サウンドエフェクトや音量を設定または変更するブロックは、スクリプトを1フレーム分停止させるのではなく、即座に実行されるようになりました
+ - ペンの最小サイズを1から0に、最大サイズを1200から無限に拡大
+ - マウスのXとYの座標は丸められないので、フルスクリーンでは便利です。
 
-This list will be expanded over time.
+このリストは時間の経過とともに拡張される予定です。
