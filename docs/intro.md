@@ -6,11 +6,11 @@ hide_table_of_contents: true
 
 # TurboWarp Documentation
 
-[TurboWarp](https://turbowarp.org/) is a mod of Scratch with improved performance, dark mode, addons, and more. This is the place where its extra documentation goes.
+[TurboWarp](https://turbowarp.org/)は、Scratchのパフォーマンス向上、ダークモード、アドオンなどを追加したMODです。ここは、その追加ドキュメントがある場所です。
 
-Related projects:
+関連プロジェクト。
 
- - [TurboWarp Desktop](https://desktop.turbowarp.org/)
- - [TurboWarp Packager](https://packager.turbowarp.org/)
+ - TurboWarpデスクトップ](https://desktop.turbowarp.org/)
+ - TurboWarpパッケージャ](https://packager.turbowarp.org/)
 
-These pages are [open source](https://github.com/TurboWarp/docs). Contributions are welcome.
+これらのページは[オープンソース](https://github.com/TurboWarp/docs)です。貢献は大歓迎です。
