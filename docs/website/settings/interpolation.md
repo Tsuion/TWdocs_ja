@@ -3,19 +3,19 @@ slug: /interpolation
 hide_table_of_contents: true
 ---
 
-# Interpolation
+# 補間処理
 
-Interpolation makes projects appear smoother by interpolating movement of sprites between frames.
+補間は、フレーム間のスプライトの動きを補間することで、プロジェクトをより滑らかに見せることができます。
 
-Interpolation should not be used on:
+補間機能を使用すべきでないプロジェクト
 
- - 3D projects
- - Raytracers
- - Pen projects
- - Laggy projects
+ - 3Dプロジェクト
+ - レイトレーサー
+ - ペンプロジェクト
+ - ラギープロジェクト
 
-Interpolation is unlikely to make these projects look smoother because interpolation can't interpolate pen, but it will hurt performance.
+補間はペンを補間することができないので、これらのプロジェクトの見た目を滑らかにする可能性は低いですが、パフォーマンスを低下させるでしょう。
 
-Interpolation can introduce slight (up to 1/30th of a second) input latency.
+補間は、わずかな（最大1/30秒）入力レイテンシをもたらすことがあります。
 
-Complex projects such as scrolling platformers can experience graphical glitches.
+スクロールプラットフォーマーのような複雑なプロジェクトでは、グラフィックの不具合が発生する可能性があります。
