@@ -3,75 +3,75 @@ slug: /embedding
 hide_table_of_contents: true
 ---
 
-# Embedding
+# 埋め込み
 
-TurboWarp can be embedded with a standard iframe:
+TTurboWarpは、標準的なiframeで埋め込むことができます。
 
 ```html
 <iframe src="https://turbowarp.org/414716080/embed" width="499" height="416" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
 ```
 
-Replace `414716080` with the ID of your project. You can change the width and height of the iframe and the player will automatically resize to fit (499x416 will result in the stage rendering at an undistorted 480x360).
+`414716080`をプロジェクトのIDに置き換えてください。iframeの幅と高さを変更すると、プレーヤーはそれに合わせて自動的にリサイズされます（499x416の場合、ステージは歪みのない480x360でレンダリングされます）。
 
-TurboWarp's embeds will have a transparent background if the iframe is allowed to be transparent. TurboWarp's embeds will have a fullscreen button if the iframe is allowed to become fullscreen. The example code above enables both of these feature.
+TurboWarpのembedは、iframeの透過が許可されている場合、背景が透明になります。TurboWarpの埋め込みは、iframeがフルスクリーンになることを許可されている場合、フルスクリーンボタンを持つようになります。上のコード例では、この2つの機能を有効にしています。
 
-## Be careful with unshared projects {#unshared-projects}
+## 非共有プロジェクトに注意 {#unshared-projects}
 
-You should be aware of [upcoming changes to the Scratch API that will prevent the embed from accessing unshared Scratch projects](/unshared-projects). These changes will affect embeds. To work around this you can make sure the projects you embed are shared or use the [TurboWarp Packager](https://packager.turbowarp.org/) instead.
+あなたは、[Scratch APIへの今後の変更により、エンベッドが共有されていないScratchプロジェクトにアクセスできなくなる](/unshared-projects)ことに注意する必要があります。この変更はエンベッディングに影響します。これを回避するには、エンベッディングするプロジェクトが共有されていることを確認するか、代わりに [TurboWarp Packager](https://packager.turbowarp.org/) を使用することができます。
 
-## URL parameters {#url-parameters}
+## URLパラメーター {#url-parameters}
 
-All [standard URL Parameters](url-parameters.md) are still available. You can use these to control usernames and other things.
+[標準のURLパラメータ](url-parameters.md)はすべてそのまま利用可能です。これらを使って、ユーザー名などを制御することができます。
 
-There are also some special parameters only available in embeds:
+また、embedでのみ利用可能な特殊なパラメータもあります。以下の通りです。
 
-### Autoplay {#autoplay}
+### 自動実行 {#autoplay}
 
-Embeds support the `autoplay` parameter, which will automatically hit the green flag when the project loads. For example: https://turbowarp.org/15832807/embed?autoplay
+Embedは`autoplay`パラメータをサポートしており、プロジェクトがロードされると自動的にグリーンフラッグがヒットします。例: https://turbowarp.org/15832807/embed?autoplay
 
-Note that sound blocks may not work until the user interacts with the project (for example, by clicking). This is a restriction imposed by browsers. There is nothing TurboWarp can do to work around this.
+サウンドブロックは、ユーザーがプロジェクトとインタラクトする（例えば、クリックする）までは動作しない場合があることに注意してください。これはブラウザが課す制限です。TurboWarpはこれを回避することはできません。
 
-### Settings button {#settings-button}
+### 設定ボタン {#settings-button}
 
-You can optionally enable a settings button in embeds with the `settings-button` parameter that opens a similar menu to the "Advanced settings" menu found in the website and editor. For example: https://turbowarp.org/15832807/embed?autoplay&settings-button
+オプションで、ウェブサイトやエディタにある"Advanced settings"メニューと同様のメニューを開く`settings-button`パラメータを持つembedの設定ボタンを有効にすることができます。例: https://turbowarp.org/15832807/embed?autoplay&settings-button
 
-### Fullscreen background color {#fullscreen-background}
+### フルスクリーンの背景色 {#fullscreen-background}
 
-Outside of fullscreen mode, the embed is transparent so you can style the parent element if you want to change the background color.
+フルスクリーンモード以外では、埋め込みは透明なので、背景色を変更したい場合は、親要素にスタイルを設定することができます。
 
-In fullscreen mode, the embed will either use a white or an almost black color depending on whether the user's computer is configured to dark mode or not.
+フルスクリーンモードでは、ユーザーのコンピュータがダークモードに設定されているかどうかによって、埋め込みは白かほぼ黒のどちらかの色を使用することになります。
 
-To override this behavior, set the `fullscreen-background` parameter to a CSS color value like `black` or `rgb(50,90,100)`. For example: https://turbowarp.org/15832807/embed?fullscreen-background=yellow
+この動作をオーバーライドするには、 `fullscreen-background` パラメータに `black` や `rgb(50,90,100)` といったCSSカラーを設定してください。例: https://turbowarp.org/15832807/embed?fullscreen-background=yellow
 
-You can also use hex colors if you escape the `#` with percent encoding: `%23abc123`.
+パーセントエンコーディングで `#` をエスケープすれば、16進数の色も使用できます。`23abc123` のようになります。
 
-### Addons {#addons}
+### アドオン {#addons}
 
-By default, embeds have no addons enabled. This can be overridden with the `addons` parameter, which is a comma separated list of addon IDs to enable. For example: https://turbowarp.org/15832807/embed?addons=pause,gamepad,mute-project
+デフォルトでは、embedはアドオンを有効にしていません。これは`addons`パラメータで上書きすることができ、有効にするアドオンIDをカンマ区切りで列挙します。例: https://turbowarp.org/15832807/embed?addons=pause,gamepad,mute-project
 
-Useful addons and their IDs:
+便利なアドオンとそのID。
 
- - "Pause button" is `pause`
- - "Muted project player mode" is `mute-project`
- - "Remove curved stage border" is `remove-curved-stage-border`
- - "File drag and drop" is `drag-drop`
- - "Gamepad support" is `gamepad`
- - "Reverse order of project controls" is `editor-buttons-reverse-order`
+ - "一時停止ボタン"は`pause`です。
+ - "ミュートプロジェクトプレイヤーモード"は`mute-project`です。
+ - "ステージの曲面ボーダーを削除"は`remove-curved-stage-border`です。
+ - "ファイルのドラッグ＆ドロップ"は`drag-drop` です。
+ - "ゲームパッドのサポート"は`gamepad`です。
+ - "プロジェクトコントロールの逆順序"は`editor-buttons-reverse-order`です。
 
-Other addons will have no effect on the embed.
+他のアドオンは埋め込みに影響を与えません。
 
-## Security considerations {#security}
+## セキュリティへの配慮 {#security}
 
-If you use user-supplied information to generate embed links, you should sanitize any arguments to make sure users can't supply arbitrary URL parameters as some can lead to unexpected behaviors.
+ユーザーが提供する情報を使って埋め込みリンクを生成する場合、ユーザーが任意のURLパラメータを提供できないように、すべての引数をサニタイズする必要があります。
 
-## Need more control? {#packager}
+## もっとコントロールしたい？ {#packager}
 
-Use the [TurboWarp Packager](https://packager.turbowarp.org/) for more control over the loading screen, accent colors, controls, and more. You can also [embed the output of the packager](/packager/embedding) very easily.
+[TurboWarp Packager](https://packager.turbowarp.org/)を使用すると、ローディング画面、アクセントカラー、コントロールなどをより自由にコントロールすることができます。また、[Packagerの出力を埋め込む](/packager/embedding)ことも非常に簡単にできます。
 
-## Donations {#donations}
+## 寄付金について {#donations}
 
-If you use a TurboWarp embed in a commercial website, it is in your best interest to [donate to us and the projects we rely upon](/donate) to ensure the embed continues to function smoothly. ❤️
+商用サイトでTurboWarpの埋め込みを使用する場合、埋め込みがスムーズに機能し続けるように、[私たちと私たちが依存しているプロジェクトに寄付する](/donate)ことが最善の利益となります。❤️
 
-## License {#license}
+## ライセンス {#license}
 
-TurboWarp is licensed under the [GPLv3.0](https://github.com/TurboWarp/scratch-gui/blob/develop/LICENSE). We believe that an `<iframe>` of a GPLv3.0 work doesn't create a derivative work under the GPLv3.0, rather it creates an "aggregate work" which is not subject to the same requirements as derivative works. However, we are not lawyers and this is not legal advice. Talk to a lawyer if this matters to you.
+TurboWarpは[GPLv3.0](https://github.com/TurboWarp/scratch-gui/blob/develop/LICENSE)のもとでライセンスされています。私たちは、GPLv3.0作品の`<iframe>`はGPLv3.0に基づく派生作品を作成せず、むしろ派生作品と同じ要件に従わない「集合的作品」を作成すると考えています。しかし、わたしたちは弁護士ではありませんし、これは法的なアドバイスではありません。もしこれがあなたにとって重要なことであれば、弁護士に相談してください。
