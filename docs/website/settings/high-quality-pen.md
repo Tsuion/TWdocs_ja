@@ -3,14 +3,14 @@ slug: /high-quality-pen
 hide_table_of_contents: true
 ---
 
-# High Quality Pen
+# 高品質なペン
 
-High Quality Pen allows pen projects to render at a higher resolution rather than being stuck at 480x360 and disables some coordinate rounding in the editor.
+High Quality Penは、ペンのプロジェクトが480x360で固定されるのではなく、より高い解像度でレンダリングできるようにし、エディタでの座標丸めを一部無効化します。
 
 :::caution
-High quality pen can significantly reduce performance, especially when in fullscreen mode, as there are just so many more pixels that have to be drawn.
+高品質ペンは、特にフルスクリーンモードでは、描画しなければならないピクセル数が多くなるため、パフォーマンスが大幅に低下します。
 
-Not all projects will look better with high quality pen enabled.
+すべてのプロジェクトが高品質ペンを有効にした方が見栄えが良くなるわけではありません。
 :::
 
 <table>
@@ -26,4 +26,4 @@ Not all projects will look better with high quality pen enabled.
   </tbody>
 </table>
 
-Project pictured: https://scratch.mit.edu/projects/437594584/ with seed 803258.
+写真のプロジェクト： https://scratch.mit.edu/projects/437594584/ シード803258を使用。
