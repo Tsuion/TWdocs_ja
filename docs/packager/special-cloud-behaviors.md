@@ -3,70 +3,70 @@ slug: /packager/special-cloud-behaviors
 hide_table_of_contents: true
 ---
 
-# Special cloud behaviors
+# クラウド変数の特殊な挙動
 
 :::info
-This page is about the [TurboWarp Packager](https://turbowarp.org/).
+このページは[TurboWarp Packager](https://packager.turbowarp.org)についての記事です。
 :::
 
-The disabled-by-default "Special cloud behaviors" option changes the behavior of specifically named cloud variables to unlock new compatibilities for your project. This is based on a [similar feature in HTMLifier](https://github.com/SheepTester/htmlifier/wiki/Special-cloud-behaviours). This feature can be enabled in the "Cloud variables" section.
+デフォルトでは無効になっている"Special cloud behaviors"オプションは、特定の名前のクラウド変数の動作を変更し、プロジェクトの新しい互換性を解除します。これは、[HTMLifierの類似機能](https://github.com/SheepTester/htmlifier/wiki/Special-cloud-behaviours)をベースにしています。この機能は、"クラウド変数"セクションで有効にすることができます。
 
-To make these, just create a cloud variable as you normally would but give them the specific name found below. For example, to use the `☁ url` variable, create a variable named `url` and mark it as a cloud variable.
+これを作るには、通常通りクラウド変数を作成するだけですが、以下にあるような具体的な名前をつけます。例えば、`☁ url`変数を使用するには、`url`という名前の変数を作成し、クラウド変数としてマークします。
 
-Enabling special cloud behaviors will override any other settings for these variables, so a variable like `☁ username` will never be stored locally or synced with other users.
+特別なクラウド動作を有効にすると、これらの変数に対する他の設定が上書きされます。したがって、`☁ username`のような変数は、ローカルに保存されたり、他のユーザーと同期されたりすることは決してありません。
 
 ## ☁ url {#url}
 
-The value of `☁ url` will be set to the page's current URL. Changing the value of `☁ url` does nothing.
+`☁ url`の値には、そのページの現在のURLが設定されます。`☁ url`の値を変更しても何も起こりません。
 
 ## ☁ redirect {#redirect}
 
-When the value of `☁ redirect` is set to a URL, the current tab will navigate to that URL.
+`☁ redirect`の値にURLを指定すると、現在のタブはそのURLへと移動する。
 
 ## ☁ open link {#open-link}
 
-When the value of `☁ open link` is set to a URL, the project will attempt to open a new tab with that URL open. Note that this isn't always reliable due to the popup blockers built in to most browsers.
+`☁ open link`の値にURLを指定すると、プロジェクトはそのURLが開かれた新しいタブを開こうとします。ほとんどのブラウザに組み込まれたポップアップブロッカーにより、これは必ずしも信頼できるものではないことに注意してください。
 
 ## ☁ username {#username}
 
-When the value of `☁ username` is changed, the value of the `username` block in the sensing category will change.
+`☁ username`の値を変更すると、センシングカテゴリの`username`ブロックの値も変更されます。
 
 ## ☁ pasted {#pasted}
 
-When the user pastes some text onto the page using a shortcut like ctrl+v, the text is stored in `☁ pasted`.
+ユーザーがctrl+vなどのショートカットでテキストをページに貼り付けると、そのテキストは`☁pasted`に格納される。
 
 ## ☁ set clipboard {#set-clipboard}
 
-When the value of `☁ set clipboard` is changed, the page will try to store the text in the user's clipboard. This might not always work.
+`☁ set clipboard`の値が変更されると、ページはユーザーのクリップボードにテキストを保存しようとします。これは常に動作するとは限りません。
 
 ## ☁ room id {#room-id}
 
-This is experimental and subject to change.
+これは実験的なものであり、変更される可能性があります。
 
-When the value of `☁ room id` is changed, the project's ID is changed. For example, if the the project's original ID is 1234 and `☁ room id` is set to `xyz`, the new project ID will be `1234-xyz`. To reset the project ID to the original ID, set the value of `☁ room id` to a blank string.
+部屋番号 `☁ room id` の値を変更すると、プロジェクトのIDが変更されます。例えば、プロジェクトの元のIDが1234で、`☁ room id`に`xyz`を設定した場合、新しいプロジェクトのIDは`1234-xyz`となります。プロジェクトIDを元のIDに戻すには、`☁ room id`の値を空白の文字列に設定します。
 
-This affects cloud variables that are set to synchronize with other users. All of these cloud variables will be moved to a completely separate room disconnected from the original. Only people with the same room ID will have variables synced between them. It could take a couple seconds for cloud variables to update as it has to reconnect to the cloud variable server.
+これは、他のユーザーと同期するように設定されているクラウド変数に影響します。これらのクラウド変数はすべて、元の部屋から切り離された完全に別の部屋に移動します。同じルームIDを持つ人だけが、その人たちの間で変数を同期させることができます。クラウド変数の更新には、クラウド変数サーバーへの再接続が必要なため、数秒かかることがあります。
 
-This does not affect locally stored cloud variables.
+これは、ローカルに保存されたクラウド変数には影響しません。
 
 ## ☁ eval {#eval}
 
 :::warning
-This option requires "Unsafe special cloud behaviors" to be enabled.
+このオプションを使用するには、"Unsafe special cloud behaviors"が有効になっている必要があります。
 
-Unsafe cloud behaviors allows the packaged project to execute arbitrary code outside of the "sandbox" that projects are typically executed in. Depending on the environment you're packaging for, this grants projects full control over your computer, including the ability to install viruses.
+Unsafeクラウド動作により、パッケージ化されたプロジェクトは、プロジェクトが通常実行されるサンドボックスの外で任意のコードを実行することができるようになります。パッケージングする環境によっては、プロジェクトがあなたのコンピュータを完全に制御できるようになり、ウイルスをインストールする能力も得られます。
 
-If you do not trust the project you're packaging or don't make use of this feature, please turn off this option.
+パッケージングするプロジェクトを信頼していない場合、またはこの機能を利用しない場合は、このオプションをオフにしてください。
 :::
 
-When the value of `☁ eval` is changed, its value will be evaluated as JavaScript.
+`eval`の値が変更されると、その値がJavaScriptとして評価される。
 
-If the JavaScript is successfully evaluated, its output will be stored in `☁ eval output`.
+JavaScriptが正常に評価された場合、その出力は`☁ eval output`に格納される。
 
-If there was an error evaluating the JavaScript, the error will be stored in `☁ eval error`.
+JavaScriptの評価に失敗した場合、そのエラーは`☁ eval error`に格納される。
 
-If the JavaScript returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), it will store the resolved value in `☁ eval output` if the promise resolves, or the error in `☁ eval error` if it rejects. Note that setting `☁ eval` is always an instant process, so the output variables may not update immediately.
+JavaScriptが[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) を返した場合、Promiseが解決されれば`☁ eval output`に、拒否されれば`☁ eval error`にそのエラーが格納されます。なお`☁ eval`の設定は常に瞬時に行われるため、出力変数はすぐに更新されないかもしれません。
 
-## Further information and discussion {#further-information}
+## 詳細な情報と考察 {#further-information}
 
-See https://github.com/TurboWarp/packager/issues/48
+https://github.com/TurboWarp/packager/issues/48 をご確認ください。
