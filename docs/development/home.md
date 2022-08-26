@@ -4,8 +4,8 @@ sidebar_position: 1
 hide_table_of_contents: true
 ---
 
-# Development
+# 開発
 
-This is the place where documentation about developing TurboWarp goes.
+ここはTurboWarpの開発に関するドキュメントが置かれる場所です。
 
-Most people should read the [documentation intended to be read by end users](/) instead.
+ほとんどの人は、代わりに[エンドユーザーが読むことを目的としたドキュメント](/)を読んでください。
