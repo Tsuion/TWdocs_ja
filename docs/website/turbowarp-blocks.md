@@ -3,38 +3,38 @@ slug: /blocks
 hide_table_of_contents: true
 ---
 
-# TurboWarp Blocks
+# TurboWarpブロック
 
-TurboWarp has a section of blocks that allows you to use certain features previously not accessible to Scratch projects.
+TurboWarpにはブロックのセクションがあり、これまでScratchプロジェクトではアクセスできなかった特定の機能を使用することができます。
 
-## is compiled? and is TurboWarp? {#is-compiled}
+## is compiled? と is TurboWarp? {#is-compiled}
 
 ![is compiled?](./assets/is-compiled.svg)
 
-See https://scratch.mit.edu/projects/414716080/
+https://scratch.mit.edu/projects/414716080/ をご覧ください。
 
-These blocks are "compatible" with Scratch because they're actually just modified argument reporters.
+これらのブロックはScratchと"互換"であり、実際には引数レポーターを変更しただけのものだからです。
 
 :::warning
-Every block beyond this warning is **incompatible** with Scratch. Projects that use them **can not** be uploaded to the Scratch website. If you don't use any TurboWarp-exclusive blocks, then there should be no issue with making your project in TurboWarp and uploading it to Scratch.
+この警告を超えたブロックは、Scratchと**互換性がありません**。これらを使用したプロジェクトは、Scratchのウェブサイトにアップロードすることはできません。TurboWarp専用のブロックを使用しないのであれば、TurboWarpでプロジェクトを作成し、Scratchにアップロードしても問題はないはずです。
 
-**We do not recommend using these blocks. No new blocks will be added in the forseeable future**.
+**これらのブロックの使用はお勧めしません。当面の間、新しいブロックは追加されません**。
 :::
 
-## last key pressed {#last-key-pressed}
+## さいごに押したキー {#last-key-pressed}
 
 ![last key pressed](./assets/last-key-pressed.svg)
 
-It tells you the last key that was pressed. It's intended to be used something like this:
+最後に押されたキーが分かります。このような使い方を想定しています。
 
 ![when any key pressed, do something with last key pressed](./assets/how-to-use-last-key-pressed.svg)
 
-## mouse button down? {#mouse-button-down}
+## マウスボタンを押したまま？ {#mouse-button-down}
 
 ![primary mouse button down?](./assets/mouse-button-down.svg)
 
-It's like "mouse down?" but lets you check each individual button. Keep in mind that due to how Scratch interprets mouse input, it's possible for a block like "is primary mouse button down?" to report true while the standard "mouse down?" reports false.
+これは"マウスが押された"のようなものですが、個々のボタンをチェックすることができます。Scratchがマウスの入力をどのように解釈するかによって、"is primary mouse button down?"のようなブロックがtrueを報告し、標準の"マウスが押された"がfalseを報告することがあることを覚えておいてください。
 
- * (0) primary is usually left
- * (1) middle is usually scroll wheel
- * (2) secondary is usually right (running this block once will disable right click on the stage)
+ * (0)プライマリは通常左です。
+ * (1) middleは通常スクロールホイール
+ * (2) secondaryは通常右 (このブロックを一度実行すると、ステージ上で右クリックができなくなります)
