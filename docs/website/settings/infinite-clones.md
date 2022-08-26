@@ -3,10 +3,10 @@ slug: /infinite-clones
 hide_table_of_contents: true
 ---
 
-# Infinite Clones
+# 無限のクローン
 
-Infinite Clones disables Scratch's 300 clone limit.
+Infinite Clonesは、Scratchの300クローン制限を無効にします。
 
 :::caution
-This may break some projects.
+一部のプロジェクトが壊れる可能性があります。
 :::
