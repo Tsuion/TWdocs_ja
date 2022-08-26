@@ -3,10 +3,10 @@ slug: /warp-timer
 hide_table_of_contents: true
 ---
 
-# Warp Timer
+# Warpタイマー
 
-Warp Timer makes scripts check if they are stuck in a long or infinite loop and run at a low framerate instead of getting stuck until the loop finishes. This fixes most crashes but has a significant performance impact, so it's only enabled by default in the editor.
+Warpタイマーは、スクリプトが長いループや無限ループにはまった場合にチェックし、ループが終了するまで動けなくなるのではなく、低いフレームレートで実行されるようにします。これはほとんどのクラッシュを修正しますが、パフォーマンスに大きな影響を与えるため、エディタでのみデフォルトで有効になっています。
 
-As a demonstration, consider the project https://turbowarp.org/446742201?stuck. This project has an infinite loop inside a run without screen refresh block. With Warp Timer enabled, the project will run at around two frames per second. With Warp Timer disabled, however, the script will never end.
+デモンストレーションとして、プロジェクト https://turbowarp.org/446742201?stuck を考えてみましょう。このプロジェクトでは、スクリーンリフレッシュなしの実行ブロックの中に無限ループがあります。Warpタイマーを有効にすると、このプロジェクトは1秒間に2フレーム程度で実行されます。しかし、Warpタイマーを無効にすると、スクリプトは決して終了しません。
 
-Warp Timer was previously called "Stuck Checking".
+Warpタイマーは、以前は"Stuck Checking"と呼ばれていました。
