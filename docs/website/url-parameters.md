@@ -3,64 +3,64 @@ slug: /url-parameters
 hide_table_of_contents: true
 ---
 
-# URL Parameters
+# URLパラメーター
 
 
 :::note
-## Only "hidden" URL parameters are listed here {#only-hidden-url-parameters-are-listed-here}
-TurboWarp will automatically store settings such as turbo mode, 60 FPS, high quality pen, etc. in the URL, but some advanced options still need to be manually applied. This page only documents these advanced options.
+##"隠し "URLパラメータのみここに記載{#only-hidden-url-parameters-are-listed-here}。
+TurboWarpは、ターボモード、60FPS、高品質ペンなどの設定を自動的にURLに格納しますが、一部の高度なオプションはまだ手動で適用する必要があります。このページでは、これらの高度なオプションについてのみ説明します。
 :::
 
 
 ## Username {#username}
 
-The `username` option controls the value of the username block.
+`username`オプションは、ユーザー名ブロックの値を制御します。
 
 https://turbowarp.org/443603478?username=ExampleUsername
 
-## Cloud host {#cloud_host}
+## クラウドホスト {#cloud_host}
 
-The `cloud_host` option lets you change the cloud variable server that TurboWarp will connect to, for example:
+`cloud_host`オプションは、TurboWarpが接続するクラウド変数サーバーなどを変更することができます。
 
 https://turbowarp.org/12785898?cloud_host=wss://clouddata.turbowarp.org
 
-Inclusion of `ws://` or `wss://` is optional but recommended. `wss://clouddata.turbowarp.org` is the default cloud data server used by TurboWarp, so this example doesn't actually change anything. Insecure ws:// servers may not work because TurboWarp uses HTTPS.
+`ws://`または`wss://`を含めることは任意ですが、推奨されます。`wss://clouddata.turbowarp.org`はTurboWarpが使用するデフォルトのクラウドデータサーバーなので、この例では実際には何も変更されません。TurboWarpはHTTPSを使用するため、安全でない`ws://`サーバーは動作しない可能性があります。
 
-It is not possible to use this to connect to Scratch's cloud variable server as it requires account credentials which TurboWarp can't support.
+Scratchのクラウド変数サーバーへの接続には、TurboWarpがサポートできないアカウント認証が必要なため、これを使用することはできません。
 
-## Custom extensions {#extension}
+## カスタム拡張機能 {#extension}
 
-The `extension` option loads a custom extension from a URL. See [Custom Extensions](/development/custom-extensions).
+`extension` オプションは、URLからカスタム拡張機能をロードします。[カスタム拡張機能](/development/custom-extensions)を参照してください。
 
 <!-- Commented due to possible removal -->
 <!--
 ## `scale` {#scale}
 
-Controls the maximum relative scale of the player when in fullscreen mode.
+フルスクリーンモード時のプレーヤーの最大相対スケールを制御します。
 
 https://turbowarp.org/fullscreen?scale=2
 -->
 
-## Disable compiler {#nocompile}
+## コンパイラを無効にする {#nocompile}
 
-The `nocompile` option turns off the compiler. You probably shouldn't enable this.
+`nocompile` オプションはコンパイラをオフにします。おそらく、これを有効にするべきではありません。
 
 https://turbowarp.org/?nocompile
 
-## Project URL {#project_url}
+## プロジェクトURL {#project_url}
 
-The `project_url` option tells TurboWarp to download project data from an arbitrary URL. Do not use together with a regular project ID.
+`project_url`オプションは、TurboWarpに任意のURLからプロジェクトデータをダウンロードするように指示します。通常のプロジェクトIDと一緒に使用しないでください。
 
 https://turbowarp.org/?project_url=projects.scratch.mit.edu/10128407
 
-This works with any URL that supports CORS, not just projects.scratch.mit.edu. https:// is optional, but it is recommended to not put it for brevity. http:// URLs generally will generally not work for security reasons. Note that the URL needs to be a direct download and must support CORS (`Access-Control-Allow-Origin: *`). [GitHub Pages](https://pages.github.com/) will do this automatically and is known to work well.
+これは、projects.scratch.mit.eduに限らず、CORSをサポートしているURLであれば動作します。 https:// はオプションですが、簡潔にするために付けないことを推奨します。 http:// URLは一般的にセキュリティ上の理由から動作しません。URL は直接ダウンロードする必要があり、CORS (`Access-Control-Allow-Origin: *`) をサポートしていなければならないことに注意してください。[GitHub Pages](https://pages.github.com/) は自動的にこれを行い、うまく機能することが知られています。
 
-## Project token {#token}
+## プロジェクトトークン {#token}
 
-The `token` option tells TurboWarp what it should use as the project token when it fetches a project from Scratch. This is an experimental feature related to the [upcoming unshared project changes](/unshared-projects) to possibly allow the creator of a project to share their own unshared projects.
+`token`オプションは、TurboWarpがScratchからプロジェクトを取得する際にプロジェクト・トークンとして使用するものを指定します。これは、[unshared project changes](/unshared-projects) に関連する実験的な機能で、プロジェクトの作成者が自分の非共有プロジェクトを共有できるようになる可能性があります。
 
-The process to obtain a project token is not described here.
+プロジェクト・トークンの入手方法については、ここでは割愛します。
 
-Note that tokens seem to be designed to expire after five minutes as the tokens returned from Scratch contain a timestamp 300 seconds in the future, so links that use this feature should be expected to stop working very quickly.
+なお、Scratchから返されるトークンには300秒先のタイムスタンプが含まれているため、トークンは5分後に失効するように設計されているようで、この機能を使ったリンクは非常に早く機能しなくなることが予想されます。
 
-Some may be uncomfortable putting the project token in the URL because it will be sent to TurboWarp's servers. **We do not log project tokens specified using a URL parameter in any way.** If this promise isn't enough for you, you can also put the token in the fragment or hash part of the URL which won't be sent to our server. For example: `https://turbowarp.org/1#?token=1234567_abcdef...` You can examine the requests made by the website to verify that this token is only ever used to download the project directly from Scratch.
+プロジェクト トークンは TurboWarp のサーバーに送信されるため、URL に入れることに抵抗がある方もいらっしゃるかもしれません。 **URLパラメータで指定されたプロジェクト・トークンは、一切記録されません。** この約束では不十分な場合は、URLのフラグメントまたはハッシュ部分にトークンを入れて、サーバーに送信されないようにすることもできます。例えば、`https://turbowarp.org/1#?token=1234567_abcdef...`このトークンがScratchから直接プロジェクトをダウンロードするためにのみ使用されることを確認するために、ウェブサイトが行うリクエストを調べることができます。
