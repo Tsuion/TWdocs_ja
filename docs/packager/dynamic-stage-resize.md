@@ -3,17 +3,17 @@ slug: /packager/dynamic-stage-resize
 hide_table_of_contents: true
 ---
 
-# Dynamic stage resize
+# 動的なステージサイズの変更
 
 :::info
-This page is about the [TurboWarp Packager](https://turbowarp.org/).
+このページは[TurboWarp Packager](https://packager.turbowarp.org)についての記事です。
 :::
 
-Dynamic stage resize will change the size of the stage to match whatever aspect ratio and resolution it's being displayed at.
+ダイナミックステージリサイズは、表示されているアスペクト比や解像度に合わせてステージの大きさを変更します。
 
-The stage isn't scaled; the [size](/custom-stage-size) actually changes. For example, if the user enables fullscreen on a 1920x1080 monitor, then the stage resizes to 1920x1080. If the user resizes the window to 1x1, it will also resize to that, so you should consider adding a minimum size check.
+ステージが拡大縮小されるのではなく、[size](/custom-stage-size)が実際に変更されるのです。例えば、ユーザーが1920x1080のモニターでフルスクリーンを有効にした場合、ステージは1920x1080にリサイズされます。ユーザーがウィンドウを1x1にリサイズした場合も、そのサイズにリサイズされるので、最小サイズのチェックを追加することを検討する必要があります。
 
-Almost no projects will handle this properly. To make your project compatible:
+ほとんどのプロジェクトは、これを適切に処理できません。プロジェクトに対応させるために
 
- - First, make it compatible with [custom stage size](/custom-stage-size) at all (see that page for information)
- - Then, change your stage size detection logic to run every frame and make sure to always update the positions of items (yes this is inefficient and strange, but it's plenty fast and the best choice for now)
+ - まず、[カスタムステージサイズ](/custom-stage-size)に全く対応しないようにします（詳しくはそのページをご覧ください）。
+ - 次に、ステージサイズ検出ロジックを毎フレーム実行するように変更し、アイテムの位置を常に更新するようにします（確かにこれは非効率で奇妙ですが、十分速く、現時点での最良の選択です）。
