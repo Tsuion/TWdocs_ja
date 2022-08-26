@@ -3,16 +3,16 @@ slug: /packager/commercial-use
 hide_table_of_contents: true
 ---
 
-# Can I sell projects made with the TurboWarp Packager?
+# TurboWarp Packagerで作成したプロジェクトを販売することは可能ですか？
 
-We won't comment on whether this is a good idea or not, but if you if you have the rights to all the costumes, sounds, and scripts inside the project you package, it is *possible* to sell it.
+これが良いか悪いかについてはコメントしませんが、もしあなたがパッケージ化したプロジェクトの中の衣装、サウンド、スクリプトのすべての権利を持っていれば、それを販売することは*可能*です。
 
-The open source components of Scratch and TurboWarp used by the packager are available under permissive open source licenses that allow you to use, modify, distribute, and sell your projects with almost no restrictions. There are no license fees and no royalties. It is also worthwhile to note that these licenses explicitly do not offer a warranty of any kind; the authors are not responsible for damage caused by things like bugs.
+パッケージャーが使用するScratchとTurboWarpのオープンソースコンポーネントは、寛容なオープンソースライセンスで提供されており、ほぼ無制限にプロジェクトの使用、修正、配布、販売を行うことができます。ライセンス料やロイヤリティは一切かかりません。また、これらのライセンスは、いかなる種類の保証も提供しないことを明示しており、バグなどによる損害について作者は責任を負いませんので、ご注意ください。
 
-If you used costumes, sounds, or scripts created by other people, make sure you have permission from these people to sell their work. Anything you found on the Scratch website is supposed to be available under the [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) license which technically doesn't prevent you from re-selling the work, but it requires attribution and the share-alike clause may have significant license implications on the rest of your project. Project creators can grant you additional permissions on top of the CC BY-SA 2.0 if they choose.
+他の人が作った衣装、サウンド、スクリプトを使用した場合、その作品を販売する許可をこれらの人から得ていることを確認してください。Scratchウェブサイトで見つけたものはすべて、[CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) ライセンスで利用できることになっています。技術的には、作品の再販を妨げるものではありませんが、帰属表示が必要で、share-alike条項があなたのプロジェクトの残りの部分に重要なライセンス影響を与える可能性があります。プロジェクトの作成者は、選択すれば、CC BY-SA 2.0の上に追加の許可を付与することができます。
 
-If you make money off of the packager, you are encouraged to [donate to us and the projects we rely upon](/donate). ❤️
+もしあなたがパッケージャーでお金を稼いだら、私たちと私たちが頼るプロジェクトに[寄付](/donate)することが推奨されます。❤️
 
 :::note
-We are not lawyers. This page is not legal advice. If this is important, talk to a real lawyer.
+私たちは弁護士ではありません。このページは法的なアドバイスではありません。もしこれが重要なことであれば、本物の弁護士に相談してください。
 :::
