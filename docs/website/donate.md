@@ -3,13 +3,13 @@ slug: /donate
 hide_table_of_contents: true
 ---
 
-# Donate
+# 寄付する
 
-The TurboWarp project now accepts donations on GitHub: https://github.com/sponsors/GarboMuffin
+TurboWarpプロジェクトは現在、GitHubで寄付を受け付けています: https://github.com/sponsors/GarboMuffin
 
-You should also donate to:
+また、寄付先として
 
- - Scratch: https://scratch.mit.edu/donate
+ - スクラッチ： https://scratch.mit.edu/donate
  - Fosshost: https://fosshost.org/donate
 
-Thank you! ❤️
+Thank you❤️
