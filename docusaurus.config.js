@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'TurboWarp Documentation',
   url: 'https://docs.turbowarp.org',
-  baseUrl: '/',
+  baseUrl: '/TWdocs_ja/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   organizationName: 'TurboWarp',
