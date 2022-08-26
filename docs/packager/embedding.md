@@ -1,24 +1,24 @@
 ---
 slug: /packager/embedding
 hide_table_of_contents: true
-sidebar_label: Embedding
+sidebar_label: 埋め込み
 ---
 
-# Embedding the packager
+# パッケージャーを組み込む
 
 :::info
-This page is about the [TurboWarp Packager](https://turbowarp.org/). If just want an easy way to embed a Scratch project into a website, see [the other embedding page](/embedding).
+このページは[TurboWarp Packager](https://packager.turbowarp.org)についてのページです。もし、Scratchプロジェクトを簡単にWebサイトに埋め込みたいだけなら、[その他の埋め込みページ](/embedding)をご覧ください。
 :::
 
-You can embed the output of the TurboWarp Packager into another website:
+TurboWarp Packagerの出力を他のWebサイトに埋め込むことができます。
 
 ```html
 <iframe src="path_to_project.html" width="480" height="360" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
 ```
 
-Depending on the environment you used, where you stored the project, and what you named it, the `src` attribute will vary.
+使用した環境、プロジェクトの保存場所、プロジェクトの名前によって、 `src` 属性は異なります。
 
- - If you used "Plain HTML", it's just the path to the HTML file.
- - If you used "Zip", it's the path to the file `index.html` contained within the extracted zip.
+ - "Plain HTML"の場合は、HTMLファイルへのパスです。
+ - "Zip"の場合は、解凍されたZipに含まれるファイル `index.html` へのパスが指定されます。
 
-If you have controls enabled, add 48 to the value of `height` to avoid the stage getting shrunk.
+コントロールを有効にしている場合は、ステージが縮小されないように `height` の値に 48 を追加してください。
