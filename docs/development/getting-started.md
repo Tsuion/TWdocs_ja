@@ -4,38 +4,38 @@ sidebar_position: 2
 hide_table_of_contents: true
 ---
 
-# Getting Started
+# はじめに
 
-These are the instructions for setting up the TurboWarp development environment or making custom builds on your own computer.
+TurboWarpの開発環境のセットアップや、ご自身のコンピュータでカスタムビルドを行うための手順です。
 
-If you just want to use TurboWarp, visit https://turbowarp.org/. You don't need to follow these instructions.
+TurboWarpを使用したいだけであれば、https://turbowarp.org/ をご利用ください。これらの指示に従う必要はありません。
 
-### Dependencies {#dependencies}
+### 依存関係 {#dependencies}
 
-Make sure you have these installed:
+これらがインストールされていることを確認してください。
 
  - [Git](https://git-scm.com)
  - [Node.js](https://nodejs.org/en/)
 
-You might have to restart your terminal or computer for them to be fully installed. We assume you have some familiarity with the command line. Note that TurboWarp is a large app that may take a lot of resources to build.
+完全にインストールされるには、端末やコンピューターを再起動する必要があるかもしれません。コマンドラインにある程度慣れていることを前提としています。TurboWarpは大規模なアプリであり、ビルドに多くのリソースを必要とする可能性があることに注意してください。
 
-### A note on how Scratch is organized {#organization}
+### Scratchの構成についてのメモ {#organization}
 
-Scratch 3 is organized into a bunch of different repositories. Each implements a part of the app. Here's the ones that TurboWarp cares enough about to fork:
+Scratch 3は、たくさんの異なるリポジトリに整理されています。それぞれがアプリの一部を実装しています。ここでは、TurboWarpがフォークするほど気になるものを紹介します。
 
- - scratch-vm executes the project and is where the compiler lives
- - scratch-render renders sprites and implements "touching" blocks and is where high quality pen lives
- - scratch-blocks is the script editor
- - scratch-gui implements the outer interface, connects everything together, and is where addons live
- - scratch-paint is the costume editor
- - scratch-parser extracts sb2 and sb3 files
- - scratch-svg-render renders SVG files
- - scratch-storage downloads and uploads files
- - scratch-l10n contains translations
+ - scratch-vm はプロジェクトを実行し、コンパイラが存在する場所です。
+ - scratch-render はスプライトをレンダリングし、「触れる」ブロックを実装するもので、高品質のペンが存在する場所です。
+ - scratch-blocks はスクリプトエディタです。
+ - scratch-gui は外部インターフェイスを実装し、すべてをつなぎ、アドオンが存在する場所です。
+ - scratch-paint はコスチュームエディタです。
+ - scratch-parser は sb2 と sb3 ファイルを抽出します。
+ - scratch-svg-render は SVG ファイルをレンダリングします。
+ - scratch-storage はファイルのダウンロードとアップロードを行います。
+ - scratch-l10n は翻訳を含みます。
 
-### Building the GUI {#gui}
+### GUIの構築 {#gui}
 
-The GUI is the minimum to build TurboWarp.
+GUIはTurboWarpを構築するための最小限のものです。
 
 ```bash
 git clone https://github.com/TurboWarp/scratch-gui
@@ -44,23 +44,23 @@ npm ci
 npm start
 ```
 
-If the repository has a package-lock.json, we recommend using `npm ci` instead of `npm install`.
+リポジトリにpackage-lock.jsonがある場合は、`npm install`の代わりに`npm ci`を使用することをお勧めします。
 
 http://localhost:8601/
 
-If you just want to build the GUI, you can stop here.
+GUIを作るだけなら、ここでやめてもよいです。
 
-### Build {#build}
+### Buildビルド {#build}
 
-While `npm start` is useful for development, at some point you'll need to get HTML, JS, etc. out. To do this, run this in the scratch-gui folder:
+`npm start` は開発には便利ですが、ある時点で HTML や JS などを取り出す必要があります。これを行うには、scratch-guiフォルダでこれを実行します。
 
 ```
 npm run build
 ```
 
-Output goes in the `build` folder.
+出力は `build` フォルダに入ります。
 
-When deploying TurboWarp to a website, you should enable production mode. This will result in faster execution and a greatly reduced file size.
+TurboWarpをWebサイトにデプロイする場合、プロダクションモードを有効にする必要があります。これにより、実行速度が向上し、ファイルサイズが大幅に縮小されます。
 
 ```bash
 # mac, linux
@@ -75,13 +75,13 @@ $env:NODE_ENV="production"
 npm run build
 ```
 
-By default TurboWarp generates links like https://turbowarp.org/editor.html#123 However, by setting `ROOT=/` and `ROUTING_STYLE=wildcard` (in the same way that you set `NODE_ENV=production`), you can get routes like https://turbowarp.org/123/editor instead. Note that this requires a server that will setup the proper aliases. The webpack development server in scratch-gui is setup for this. For production you'd want something more like https://github.com/TurboWarp/turbowarp.org
+デフォルトでは、TurboWarpはhttps://turbowarp.org/editor.html#123 のようなリンクを生成します。しかし、`ROOT=/`と`ROUTING_STYLE=wildcard`（`NODE_ENV=production`と同じように）を設定すると、代わりに https://turbowarp.org/123/editor のようなルートを取得することができます。このためには、適切なエイリアスを設定するサーバーが必要なことに注意してください。scratch-gui の webpack 開発用サーバーはこのためにセットアップされています。本番環境では、https://github.com/TurboWarp/turbowarp.org のようなものが必要でしょう。
 
-### Linking other packages {#linking}
+### 他のパッケージとの連携 {#linking}
 
-If you're interested in changing parts of TurboWarp other than the GUI, you have to do extra steps. You do not need to do this if you are only interesting in scratch-gui.
+TurboWarpのGUI以外の部分を変更することに興味がある場合、余分な手順を踏まなければなりません。scratch-guiにしか興味がないのであれば、このようなことをする必要はありません。
 
-It's probably easiest to understand by example, so here's how you would link local instances of scratch-vm and scratch-render to your local scratch-gui:
+例で説明するのが一番わかりやすいと思いますので、ここではローカルのscratch-vmとscratch-renderのインスタンスをローカルのscratch-guiにリンクさせる方法を説明します。
 
 ```bash
 git clone https://github.com/TurboWarp/scratch-vm
