@@ -6,9 +6,9 @@ sidebar_label: Overview
 
 # Advanced Settings
 
-Advanced settings allow you to reconfigure your project to do things that Scratch normally wouldn't let you do.
+高度な設定では、Scratchが通常できないようなことを行うために、プロジェクトを再構成することができます。
 
-Navigate using the sidebar on the left. Look under the "Advanced settings" category.
+左のサイドバーを使って移動します。"Advanced settings"カテゴリの下を見てください。
 
 <!-- Migration for old links to https://docs.turbowarp.org/advanced-settings#high-quality-pen -->
 import BrowserOnly from "@docusaurus/BrowserOnly";
