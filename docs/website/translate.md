@@ -3,49 +3,49 @@ slug: /translate
 hide_table_of_contents: true
 ---
 
-# Help Translate TurboWarp
+# TurboWarpの翻訳をお手伝いします
 
-We're looking for people to help translate TurboWarp into languages other than English. If that interests you, read on.
+TurboWarpの英語以外の言語への翻訳を手伝ってくれる人を募集しています。興味のある方は、ぜひお読みください。
 
-Create a new discussion if you have questions following this guide: https://github.com/TurboWarp/scratch-gui/discussions
+このガイドに沿って質問がある場合は、新しいディスカッションを作成してください： https://github.com/TurboWarp/scratch-gui/discussions
 
-## Joining the translation team {#joining-the-translation-team}
+## 翻訳チームへの参加 {#joining-the-translation-team}
 
-### Requirements {#requirements}
+### 必要条件 {#requirements}
 
- - You are expected to read this entire document.
- - You must be fluent in both English and another language.
- - We want translations written by humans, not by machines. That means **NO Google Translate** or other machine translators.
- - Requests to translate new languages that aren't already supported by Scratch will be rejected.
- - The initial translation for new languages may take a while but future updates will be very quick. Please check occasionally to translate any newly added strings.
- - This won't be a large time commitment. Don't lose sleep over this. We're all volunteers.
+ - この文書全体を読むことが期待されています。
+ - 英語と他の言語の両方に堪能であることが必要です。
+ - 私たちは、機械ではなく、人間によって書かれた翻訳を望んでいます。つまり、**Google翻訳**やその他の機械翻訳は使わないでください。
+ - Scratchがまだサポートしていない新しい言語を翻訳するリクエストは却下されます。
+ - 新しい言語の最初の翻訳にはしばらく時間がかかるかもしれませんが、今後のアップデートは非常に迅速に行われます。新しく追加された文字列を翻訳するために、時々チェックしてください。
+ - これは大きな時間的負担にはならないでしょう。このことで眠れなくなることはありません。私たちは皆ボランティアです。
 
-### Request to join {#request-to-join}
+### 参加申し込み {#request-to-join}
  
- - Go to [our Transifex page](https://www.transifex.com/turbowarp/turbowarp/), and click on the purple "Join this project" button.
- - You'll probably have to create a Transifex account. Enter your email, a new password, then Sign Up.
- - When asked for your name, enter your username as your name and surname instead of your real name. For "department" and "job title", select "localization" and "individual contributor".
- - On then next step, select "join an existing project".
- - Choose the language(s) you want to translate into.
+ - [Transifexのページ](https://www.transifex.com/turbowarp/turbowarp/)にアクセスし、紫の"JOIN THIS PROJECT"ボタンをクリックします。
+ - おそらくTransifexのアカウントを作成しなければならないでしょう。あなたのEメールと新しいパスワードを入力し、サインアップしてください。
+ - 名前を聞かれたら、本名ではなく、ユーザー名を名字で入力します。部署と職種は、"localization"と"individual contributor"を選択します。
+ - 次のステップでは、"既存のプロジェクトに参加する"を選択します。
+ - 翻訳したい言語を選択します。
 
-The request will be accepted within a few days.
+依頼は数日以内に受理されます。
 
-If the request is rejected, that most likely means that Scratch (and by extension, TurboWarp) does not support that language.
+リクエストが却下された場合は、Scratch（ひいてはTurboWarpも）がその言語をサポートしていない可能性が高いです。
 
-## Writing translations {#writing-translations}
+## 翻訳を書く {#writing-translations}
 
-Find your language on https://www.transifex.com/turbowarp/turbowarp/dashboard/ and click the Translate button.
+https://www.transifex.com/turbowarp/turbowarp/dashboard/ で自分の言語を探し、"翻訳"ボタンをクリックします。
 
-Read https://docs.transifex.com/translation/translating-with-the-web-editor to learn how to use the Transifex translator.
+Transifex翻訳機の使い方は、https://docs.transifex.com/translation/translating-with-the-web-editor をお読みください。
 
-Translations are pulled from Transifex periodically.
+翻訳は定期的にTransifexから引き出されます。
 
-Our translations are broken up into a different resource for each subproject:
+私たちの翻訳は、各サブプロジェクトごとに異なるリソースに分割されています。
 
- - `gui.json` is for the [website and editor](https://turbowarp.org). This is the most important file to translate.
- - `desktop.json` is for [the desktop app](https://desktop.turbowarp.org/).
- - `desktop-web.json` is for [the desktop app's website](https://desktop.turbowarp.org/).
- - `addons.json` is for the [addon settings page](https://turbowarp.org/addons) (not the addons themselves).
- - Translations for the addons themselves are maintained externally. Due to Scratch's policy on browser extensions, we will not link that page here, sorry.
- - `packager.json` is for [the packager](https://packager.turbowarp.org/).
- - `store-listings.yaml` is for the desktop app's listings in places like the [Microsoft Store](https://apps.microsoft.com/store/detail/9P4DPZGV5ZKL)
+ - `gui.json`は[ウェブサイトとエディタ](https://turbowarp.org)のためのものです。これは翻訳する上で最も重要なファイルです。
+ - `desktop.json` は [デスクトップアプリ](https://desktop.turbowarp.org/) 用のファイルです。
+ - `desktop-web.json` は、[デスクトップアプリのウェブサイト](https://desktop.turbowarp.org/) 用のファイルです。
+ - `addons.json` は、[アドオン設定ページ](https://turbowarp.org/addons) 用です (アドオンそのものではありません)。
+ - アドオン自体の翻訳は、外部で管理されています。Scratch のブラウザ拡張機能に関するポリシーのため、このページにはリンクしていません。
+ - `packager.json` は [the packager] (https://packager.turbowarp.org/) 用です。
+ - `store-listings.yaml` は、[Microsoft Store](https://apps.microsoft.com/store/detail/9P4DPZGV5ZKL) のような場所でのデスクトップアプリのリストアップのためのものです。
