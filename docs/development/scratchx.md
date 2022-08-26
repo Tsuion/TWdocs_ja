@@ -5,18 +5,18 @@ hide_table_of_contents: true
 
 # ScratchX & TurboWarp
 
-TurboWarp now has primitive support for using [ScratchX](https://scratchx.org) extensions and loading ScratchX projects (.sbx).
+TurboWarpは、[ScratchX](https://scratchx.org)拡張機能の使用とScratchXプロジェクト(.sbx)のロードをプリミティブにサポートするようになりました。
 
-ScratchX was a modified version of Scratch 2 created by the Scratch Team that allowed using unofficial extensions. ScratchX no longer functions due to Flash being removed from all major browsers, but the website, scratchx.org, is still up.
+ScratchXは、Scratch Teamが作成したScratch 2の修正版で、非公式な拡張機能を使用することができました。ScratchX は Flash がすべての主要なブラウザから削除されたため機能しなくなりましたが、ウェブサイト scratchx.org はまだ存在しています。
 
-To use a ScratchX extension in TurboWarp, find the URL to the extension's JavaScript source code and load it as you would any other [custom extension](/development/custom-extensions).
+ScratchX拡張機能をTurboWarpで使用するには、拡張機能のJavaScriptソースコードのURLを見つけて、他の[カスタム拡張機能](/development/custom-extensions)と同じように読み込みます。
 
-You can find the extension URL on the extension's website or by looking at the scratchx.org URL. For example, the URL to load for `http://scratchx.org/?url=http://khanning.github.io/scratch-weather-extension/weather_extension.js` is `http://khanning.github.io/scratch-weather-extension/weather_extension.js`.
+拡張機能の URL は、拡張機能の Web サイトまたは scratchx.org の URL を見て見つけることができます。例えば、`http://scratchx.org/?url=http://khanning.github.io/scratch-weather-extension/weather_extension.js` を読み込むための URL は `http://khanning.github.io/scratch-weather-extension/weather_extension.js` です。
 
-## Important limitations {#limitations}
+## 重要な制限事項 {#limitations}
 
- - Anything related to hardware will not work. This means an overwhelming majority of extensions on scratchx.org will not work.
- - ScratchX extensions still run in the extension sandbox. This means things like the 3D extension on scratchx.org will not work.
- - ScratchX support in the packager is worse in general.
- - When loading a .sbx file, you must manually load the extensions first or you will get an error.
- - This feature is highly experimental and will be subject to change.
+ - ハードウェアに関連するものはすべて動作しません。つまり、scratchx.org の圧倒的多数の拡張機能が動作しないことになります。
+ - ScratchX の拡張機能はまだ拡張サンドボックスで動作しています。つまり、scratchx.org の 3D 拡張などは動作しません。
+ - パッケージャの ScratchX サポートは一般的に悪くなっています。
+ - .sbx ファイルを読み込む際、最初に拡張機能を手動で読み込まないとエラーになります。
+ - この機能は非常に実験的なものであり、変更される可能性があります。
